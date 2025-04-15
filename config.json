@@ -1,5 +1,11 @@
 {
     "mcpServers": {
+        "investor-agent": {
+            "command": "uvx",
+            "args": [
+                "investor-agent"
+            ]
+        },
         "time": {
             "command": "uvx",
             "args": [
