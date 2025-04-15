@@ -21,6 +21,7 @@ RUN node -v && npm -v
 COPY . /app
 WORKDIR /app
 
+
 # Create virtual environment explicitly in known location
 ENV VIRTUAL_ENV=/app/.venv
 RUN uv venv "$VIRTUAL_ENV"
@@ -39,4 +40,4 @@ EXPOSE 8000
 ENTRYPOINT ["mcpo"]
 
 # Default help CMD (can override at runtime)
-CMD ["--help"]
+CMD ["--config", "/app/config.json"]
