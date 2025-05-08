@@ -7,6 +7,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
     curl \
     ca-certificates \
+    libsecret-1-0 \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Node.js and npm via NodeSource 
