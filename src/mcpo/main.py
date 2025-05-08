@@ -144,7 +144,7 @@ async def run(
 
     main_app.add_middleware(
         CORSMiddleware,
-        allow_origins=["https://demo.contextops.ai", "https://mcp.contextops.ai", "https:/app.contextops.ai"],
+        allow_origins=["https://demo.contextops.ai", "https://mcp.contextops.ai", "https://app.contextops.ai"],
         allow_credentials=True,
         allow_methods=["*"],
         allow_headers=["*"],
